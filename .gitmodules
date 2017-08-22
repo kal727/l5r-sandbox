@@ -1,0 +1,3 @@
+[submodule "l5r-sandbox-data"]
+	path = l5r-sandbox-data
+	url = https://github.com/kal727/l5r-sandbox-data

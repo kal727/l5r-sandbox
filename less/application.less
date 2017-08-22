@@ -1,0 +1,153 @@
+#container {
+  margin: 0 auto;
+}
+
+.navbar-right {
+  margin-right: 0px;
+}
+
+.navbar-header {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.navbar-toggle {
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+  }
+}
+
+.navbar-nav > li > span {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > span {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.spectators-popup {
+  position: absolute;
+  width: 115px;
+  padding-left: 15px;
+  list-style-type: none;
+}
+
+.panel-title {
+  background-color: fade(#281d0d, 70%);
+  color: white;
+  font-weight: bold;
+  margin: 5px;
+  margin-bottom: 0;
+  padding: 1px;
+  border: 1px solid @header-border;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  top: 5px;
+}
+
+.main-header {
+  font-family: agot;
+  background-color: fade(@brand-danger, 50%);
+  height: 100%;
+  vertical-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  border-radius: 4px;
+}
+
+.military-container {
+  color: @military-icon-color;
+  font-weight: bolder;
+
+  .icon-military {
+    float: left;
+  }
+}
+
+.intrigue-container, .power-container {
+  color: @brand-secondary;
+  .icon-power {
+    float: left;
+  }
+
+  .icon-intrigue {
+    float: left;
+  }
+}
+
+.news-container {
+  max-height: 130px;
+  min-height: 130px;
+  overflow-y: auto;
+}
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  bottom: 0;
+  background-color: fade(@navbar-inverse-bg, 80%);
+
+  & a {
+    color: saddlebrown;
+
+    &:active {
+      color: saddlebrown;
+    }
+  }
+
+  &.expanded {
+    width: 200px;
+  }
+
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.userlist {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.user-row {
+  text-align: left;
+  font-weight: normal;
+  padding-top: 5px;
+  padding-left: 10px;
+
+  &:hover {
+    background-color: fade(@brand-info, 20%);;
+  }
+}
+
+.glyphicon-menu-hamburger {
+  font-size: 16px;
+}
+
+.selected {
+  box-shadow: 0 0 1px 4px @brand-secondary;
+}
+
+.bg-label {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
